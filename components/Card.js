@@ -1,7 +1,17 @@
+import Image from "next/image";
+
 function Card() {
   return (
-    <div className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] lg:w-[220px] lg:h-[220px] bg-blue-500 rounded-md relative group overflow-hidden">
-      <img src="/lab.svg" />
+    // <div className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] lg:w-[220px] lg:h-[220px] bg-blue-500 rounded-md relative group overflow-hidden">
+    <div className="bg-blue-500 rounded-md relative group overflow-hidden max-w-lg h-full w-[300px] lg:w-[250px]">
+      {/* <img src="/lab.svg" /> */}
+      <Image
+        src="/lab.svg"
+        width={300}
+        height={300}
+        layout="responsive"
+        objectFit="cover"
+      />
       <button className="absolute bg-[#4A00A6] px-3 py-1 rounded-md text-white -bottom-10 right-2 opacity-0 transition-all ease duration-200 group-hover:bottom-3.5 group-hover:opacity-100 focus:outline-none z-30 hover:bg-purple-800 border-none outline-none">
         SVG
       </button>

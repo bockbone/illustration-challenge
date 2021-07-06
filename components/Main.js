@@ -7,7 +7,8 @@ function Main() {
         All resources
       </h2>
       <div className="w-max-xxl flex items-center">
-        <div className="flex flex-col space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-4  md:gap-[25px]">
+        {/* <div className="flex flex-col space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-4  md:gap-[25px]"> */}
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Card />
           <Card />
           <Card />
